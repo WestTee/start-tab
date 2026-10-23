@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <header class="top">
+    <div id="clock" class="clock"></div>
+    <div id="greeting" class="greeting"></div>
+    <input id="filter" type="search" placeholder="Type to filter" autocomplete="off" spellcheck="false" aria-label="Filter links">
+  </header>
+  <main id="app" aria-live="polite"></main>
+  <div id="menu" class="menu" role="menu" hidden></div>
+  <dialog id="dialog"></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <button id="settings" class="edit" type="button" title="Settings" aria-label="Settings">⋯</button>
+  <script src="newtab.js" type="module"></script>
+</body>
+</html>
